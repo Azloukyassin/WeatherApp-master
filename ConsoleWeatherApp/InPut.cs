@@ -63,7 +63,7 @@ namespace WeatherApp
                 OutPut.PrintTitleFrame();
                 OutPut.PrintMenuFrame();
                 ColorAndStyle.SetTextColor(Colors.Magenta);
-                apiResponse = OutPut.PrintFourDaysForecast(await data.GetAPIResponse(EnterStringValue(ColorAndStyle.SetTextPosition("Enter city name: ", menuX, menuY)), i));
+                apiResponse = OutPut.PrintFourDaysForecast(await data.GetAPIResponse(EnterStringValue(ColorAndStyle.SetTextPosition("Enter City Name: ", menuX, menuY)), i));
             }
             else if (i.Equals(_DailyForCast))
             {
